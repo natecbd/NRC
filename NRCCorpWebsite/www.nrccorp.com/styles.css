@@ -1,0 +1,119 @@
+A.conmenu:link { color : #FFF5EE; text-decoration:underline }
+A.conmenu:visited { color : #FFF5EE; text-decoration:underline}
+A.conmenu:active { color : #FFF5EE; text-decoration:underline}
+A.conmenu:hover {color:#FFDE18; text-decoration:underline}
+
+A.mm:link { color:#FCFCFF; text-decoration:none; font-size:9pt; font-family:Arial,Helvetica; font-weight:bold; line-height : 180%}
+A.mm:visited { color:#FCFCFF; text-decoration:none; font-size:9pt; font-family:Arial,Helvetica; font-weight:bold; line-height : 180%}
+A.mm:active { color:#FCFCFF; text-decoration:none; font-size:9pt; font-family:Arial,Helvetica; font-weight:bold; line-height : 180%}
+A.mm:hover { color:#93C4F3; text-decoration:none; font-size:9pt; font-family:Arial,Helvetica; font-weight:bold; line-height : 180%}
+
+A.mms:link { color:#FCFCFF; text-decoration:none; font-size:9pt; font-family:Arial,Helvetica; }
+A.mms:visited { color:#FCFCFF; text-decoration:none; font-size:9pt; font-family:Arial,Helvetica; }
+A.mms:active { color:#FCFCFF; text-decoration:none; font-size:9pt; font-family:Arial,Helvetica;; }
+A.mms:hover { color:#93C4F3; text-decoration:none; font-size:9pt; font-family:Arial,Helvetica; }
+
+A.mmsb:link { color:#FCFCFF; text-decoration:none; font-size:8pt; font-family:Arial,Helvetica; font-weight:bold; }
+A.mmsb:visited { color:#FCFCFF; text-decoration:none; font-size:8pt; font-family:Arial,Helvetica; font-weight:bold; }
+A.mmsb:active { color:#FCFCFF; text-decoration:none; font-size:8pt; font-family:Arial,Helvetica; font-weight:bold; }
+A.mmsb:hover { color:#93C4F3; text-decoration:none; font-size:8pt; font-family:Arial,Helvetica; font-weight:bold; }
+
+A.m3h:link { color:#073766; text-decoration:none; font-size:9pt; font-family:Arial,Helvetica; font-weight:bold; line-height : 160% }
+A.m3h:visited { color:#073766; text-decoration:none; font-size:9pt; font-family:Arial,Helvetica;font-weight:bold; line-height : 160% }
+A.m3h:active { color:#073766; text-decoration:none; font-size:9pt; font-family:Arial,Helvetica;  font-weight:bold; line-height : 160%}
+A.m3h:hover { color:#93C4F3; text-decoration:none; font-size:9pt; font-family:Arial,Helvetica; font-weight:bold; line-height : 160% }
+
+A.mp:link { color : #0C5755; text-decoration:none}
+A.mp:visited { color : #0C5755; text-decoration:none}
+A.mp:active { color : #0C5755; text-decoration:none}
+A.mp:hover {color:#6495ED; text-decoration:none}
+
+A.sm:link { color : #4C4C4C; text-decoration:none}
+A.sm:visited { color : #4C4C4C; text-decoration:none}
+A.sm:active { color : #4C4C4C; text-decoration:none}
+A.sm:hover {color: #6495ED; text-decoration:none}
+
+A.tm:link { color : #213458; text-decoration:none; line-height:150%;}
+A.tm:visited { color : #213458; text-decoration:none; line-height:150%;}
+A.tm:active { color : #213458; text-decoration:none; line-height:150%;}
+A.tm:hover {color: #6495ED; text-decoration:none; line-height:150%;}
+
+.gray7  {
+	font-size : 7pt;
+	font-family : Arial,Helvetica;
+	line-height : 200%;
+	color : #4C4C4C;
+}
+.gray9b  {
+	font-size : 9pt;
+	font-family : Arial,Helvetica;
+	font-weight : bold;
+	line-height : 150%;
+	color : #4C4C4C;
+}
+.gray10  {
+	font-size : 9pt;
+	font-family : Arial,Helvetica;
+	font-weight : bold;
+	line-height : 150%;
+	color : #4C4C4C;
+}
+.green10  {
+	font-size : 10pt;
+	font-family : Arial,Helvetica;
+	font-weight : bold;
+	color : #0C5755;
+	line-height : 150%
+}
+.cream7  {
+	font-size : 7pt;
+	font-family : Arial,Helvetica;
+	color : #FFF5EE;
+}
+.cream8  {
+	font-size : 8pt;
+	font-family : Arial,Helvetica;
+	font-weight : bold;
+	line-height : 100%;
+	color : #FFF5EE;
+	line-height : 200%
+}
+.cream9  {
+	font-size : 9pt;
+	font-family : Arial,Helvetica;
+	font-weight : bold;
+	line-height : 150%;
+	color : #FFF5EE;
+}
+.cream10  {
+	font-size : 10pt;
+	font-family : Arial,Helvetica;
+	font-weight : bold;
+	color : #FFF5EE;
+}
+.cream9b  {
+	font-size : 9pt;
+	font-family : Arial,Helvetica;
+	font-weight : bold;
+	line-height : 180%;
+	color : #FFF5EE;
+}
+.bodyblue10  {
+	font-size : 10pt;
+	font-family : Arial,Helvetica;
+	line-height : 150%;
+	color : #203357;
+}
+.white10  {
+	font-size : 10pt;
+	font-family : Arial,Helvetica;
+	font-weight : bold;
+	color: #FFFFFF ;
+	line-height : 160%
+}
+.white9  {
+	font-size : 9pt;
+	font-family : Arial,Helvetica;
+	color: #FFFFFF ;
+	line-height : 160%
+}
