@@ -1,18 +1,108 @@
+* {
+    margin: 0px;
+    padding: 0;
+}
+
 body {
-    font-family: Garamond;
+    box-sizing: border-box;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+#spacer1 {
+    display: inline-block;
+    width: 100%;
+    height: 500px;
+}
+
+.arrow-right {
+    width: 0; 
+    height: 0; 
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+}
+#spacer2 {
+    height: 60px;
+}
+
+#triangle1 {
+    border-left: 20px solid white;    
+}
+#triangle2 {
+    border-left: 20px solid #d8e7ff;    
+}
+#triangle3 {
+    border-left: 20px solid #c1d9ff;    
+}
+
+.swiper {
+    width: 25%;
+    height: 500px;
+}
+#swiper1 {
+    background-color: white;
+    /*margin-left: 4%*/
+}
+#swiper2 {
+    background-color: #d8e7ff;
+}
+#swiper3 {
+    background-color: #c1d9ff;
+}
+#swiper4 {
+    background-color: #a7c7f9;
+    /*margin-right: 4%;*/
+}
+
+.service-title,
+.service-blurb {
+    margin: 40px;
+}
+
+.service-title {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.service-blurb {
+    font-family: 'Garamond';    
+    font-size: 16px;
+}
+
+#BG {
+    top: -20%; 
+    left: -100%; 
+    width: 200%; 
+    height: 200%;
+    z-index: -99;
+    background:url("../Assets/Images/Ocean.jpg") no-repeat right top;
+    position: fixed; 
+    margin: auto; 
+    min-width: 50%;
+    min-height: 50%;
 }
 
 #nav-color {
-    height: 64px;
+    opacity: .5;
+    height: 96px;
     width: 100%;
-    background-color: #f2f2f2;
+    background-color: #ffffff;
     position: absolute;
-    z-index: -999;
+    z-index: -98;
 }
 
 #NRC-Banner {
     font-size: 64px;
-    max-width: 690px;
+    font-family: 'Garamond';
+}
+
+.nav-button:hover {
+    color: #1a59bf;
 }
 
 .base-style {
@@ -24,22 +114,15 @@ body {
     font-size: 32px;
 }
 
-.right {
-    float: right;
-}
-
-.left {
-    float: left;
-}
-
 .nav-button {
-    font-size: 32px;
-    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    margin-right: 32px;
+    margin-top: 34px;
 }
 
 #leaders {
     opacity: 0;
-    margin-top: -10px;
     font-size: 16px;
     text-align: center;
     -webkit-transition-duration: .1s; 
@@ -52,410 +135,331 @@ body {
     margin-left: -200px;
     height: 40px; 
     width: 48px;
-    -webkit-transition-duration: .48s; 
-    -moz-transition-duration: .48s; 
-    -o-transition-duration: .48s; 
-    transition-duration: .48s; 
 }
 
 #resources {
     margin-left: -127px;
-    -webkit-transition-duration: .48s; 
-    -moz-transition-duration: .48s; 
-    -o-transition-duration: .48s; 
-    transition-duration: .48s; 
 }
 
 #consultants {
     margin-left: -165px;
+}
+
+#logo, #resources, #consultants,
+#NRC-Banner:hover #resources,
+#NRC-Banner.hover #resources,
+#NRC-Banner:hover #consultants,
+#NRC-Banner.hover #consultants,
+#NRC-Banner:hover #logo,
+#NRC-Banner.hover #logo,
+#NRC-Banner:hover #leaders,
+#NRC-Banner.hover #leaders {
     -webkit-transition-duration: .48s; 
     -moz-transition-duration: .48s; 
     -o-transition-duration: .48s; 
     transition-duration: .48s; 
 }
 
-#NRC-Banner:hover #resources{
+#NRC-Banner:hover #resources,
+#NRC-Banner.hover #resources,
+#NRC-Banner:hover #consultants,
+#NRC-Banner.hover #consultants,
+#NRC-Banner:hover #logo,
+#NRC-Banner.hover #logo {
     margin-left: 10px;
-    -webkit-transition-duration: .48s; 
-    -moz-transition-duration: .48s; 
-    -o-transition-duration: .48s; 
-    transition-duration: .48s; 
 }
 
-#NRC-Banner:hover #consultants{
-    margin-left: 10px;
-    -webkit-transition-duration: .48s; 
-    -moz-transition-duration: .48s; 
-    -o-transition-duration: .48s; 
-    transition-duration: .48s; 
-}
-
-#NRC-Banner:hover #logo {
-    margin-left: 0px;
-    -webkit-transition-duration: .48s; 
-    -moz-transition-duration: .48s; 
-    -o-transition-duration: .48s; 
-    transition-duration: .48s; 
-}
-
-#NRC-Banner:hover #leaders {
+#NRC-Banner:hover #leaders,
+#NRC-Banner.hover #leaders {
     opacity: 1;
     margin-top: 0px;
     -webkit-transition-delay: .22s; 
     -moz-transition-delay: .22s; 
     -o-transition-delay: .22s; 
     transition-delay: .22s; 
-    -webkit-transition-duration: .48s; 
-    -moz-transition-duration: .48s; 
-    -o-transition-duration: .48s; 
-    transition-duration: .48s; 
 }
-
 /*natural hide*/
-#natural span:nth-of-type(2) { 
-    opacity: 0; 
-    -webkit-transition-duration: .48s; 
-    -moz-transition-duration: .48s; 
-    -o-transition-duration: .48s; 
-    transition-duration: .48s;
-}
-#natural span:nth-of-type(3) { 
-    opacity: 0; 
-    -webkit-transition-duration: .40s; 
-    -moz-transition-duration: .40s; 
-    -o-transition-duration: .40s; 
-    transition-duration: .40s; 
- 
-}
-#natural span:nth-of-type(4) { 
-    opacity: 0; 
-    -webkit-transition-duration: .32s; 
-    -moz-transition-duration: .32s; 
-    -o-transition-duration: .32s; 
-    transition-duration: .32s; 
-}
-#natural span:nth-of-type(5) { 
-    opacity: 0; 
-    -webkit-transition-duration: .24s; 
-    -moz-transition-duration: .24s; 
-    -o-transition-duration: .24s; 
-    transition-duration: .24s; 
-}
-#natural span:nth-of-type(6) { 
-    opacity: 0; 
-    -webkit-transition-duration: .16s; 
-    -moz-transition-duration: .16s; 
-    -o-transition-duration: .16s; 
-    transition-duration: .16s; 
-}
+#natural span:nth-of-type(2),
+#natural span:nth-of-type(3),
+#natural span:nth-of-type(4),
+#natural span:nth-of-type(5),
+#natural span:nth-of-type(6),
 #natural span:nth-of-type(7) { 
     opacity: 0; 
-    -webkit-transition-duration: .08s; 
-    -moz-transition-duration: .08s; 
-    -o-transition-duration: .08s; 
-    transition-duration: .08s; 
 }
-
 /*natural show*/
-#NRC-Banner:hover #natural span:nth-of-type(2){ 
+#NRC-Banner:hover #natural span:nth-of-type(2),
+#NRC-Banner.hover #natural span:nth-of-type(2),
+#NRC-Banner:hover #natural span:nth-of-type(3),
+#NRC-Banner.hover #natural span:nth-of-type(3),
+#NRC-Banner:hover #natural span:nth-of-type(4),
+#NRC-Banner.hover #natural span:nth-of-type(4),
+#NRC-Banner:hover #natural span:nth-of-type(5),
+#NRC-Banner.hover #natural span:nth-of-type(5),
+#NRC-Banner:hover #natural span:nth-of-type(6),
+#NRC-Banner.hover #natural span:nth-of-type(6),
+#NRC-Banner:hover #natural span:nth-of-type(7),
+#NRC-Banner.hover #natural span:nth-of-type(7){
     opacity: 1; 
-    -webkit-transition-duration: .08s; 
-    -moz-transition-duration: .08s; 
-    -o-transition-duration: .08s; 
-    transition-duration: .08s; 
 } 
-#NRC-Banner:hover #natural span:nth-of-type(3){ 
+/*resources hide*/
+#resources span:nth-of-type(2),
+#resources span:nth-of-type(3),
+#resources span:nth-of-type(4),
+#resources span:nth-of-type(5),
+#resources span:nth-of-type(6),
+#resources span:nth-of-type(7),
+#resources span:nth-of-type(8),
+#resources span:nth-of-type(9){
+    opacity: 0; 
+}
+/*resources show*/
+#NRC-Banner:hover #resources span:nth-of-type(2),
+#NRC-Banner.hover #resources span:nth-of-type(2),
+#NRC-Banner:hover #resources span:nth-of-type(3),
+#NRC-Banner.hover #resources span:nth-of-type(3),
+#NRC-Banner:hover #resources span:nth-of-type(4),
+#NRC-Banner.hover #resources span:nth-of-type(4),
+#NRC-Banner:hover #resources span:nth-of-type(5),
+#NRC-Banner.hover #resources span:nth-of-type(5),
+#NRC-Banner:hover #resources span:nth-of-type(6),
+#NRC-Banner.hover #resources span:nth-of-type(6),
+#NRC-Banner:hover #resources span:nth-of-type(7),
+#NRC-Banner.hover #resources span:nth-of-type(7),
+#NRC-Banner:hover #resources span:nth-of-type(8),
+#NRC-Banner.hover #resources span:nth-of-type(8),
+#NRC-Banner:hover #resources span:nth-of-type(9),
+#NRC-Banner.hover #resources span:nth-of-type(9){ 
     opacity: 1; 
-    -webkit-transition-duration: .16s; 
-    -moz-transition-duration: .16s; 
-    -o-transition-duration: .16s; 
-    transition-duration: .16s; 
-} 
-#NRC-Banner:hover #natural span:nth-of-type(4){ 
+}
+/*consultants hide*/
+#consultants span:nth-of-type(2),
+#consultants span:nth-of-type(3),
+#consultants span:nth-of-type(4),
+#consultants span:nth-of-type(5),
+#consultants span:nth-of-type(6),
+#consultants span:nth-of-type(7),
+#consultants span:nth-of-type(8),
+#consultants span:nth-of-type(9),
+#consultants span:nth-of-type(10), 
+#consultants span:nth-of-type(11) { 
+    opacity: 0; 
+}
+/*consultants show*/
+#NRC-Banner:hover #consultants span:nth-of-type(2),
+#NRC-Banner.hover #consultants span:nth-of-type(2),
+#NRC-Banner:hover #consultants span:nth-of-type(3),
+#NRC-Banner.hover #consultants span:nth-of-type(3),
+#NRC-Banner:hover #consultants span:nth-of-type(4),
+#NRC-Banner.hover #consultants span:nth-of-type(4),
+#NRC-Banner:hover #consultants span:nth-of-type(5),
+#NRC-Banner.hover #consultants span:nth-of-type(5),
+#NRC-Banner:hover #consultants span:nth-of-type(6),
+#NRC-Banner.hover #consultants span:nth-of-type(6),
+#NRC-Banner:hover #consultants span:nth-of-type(7),
+#NRC-Banner.hover #consultants span:nth-of-type(7),
+#NRC-Banner:hover #consultants span:nth-of-type(8),
+#NRC-Banner.hover #consultants span:nth-of-type(8),
+#NRC-Banner:hover #consultants span:nth-of-type(9),
+#NRC-Banner.hover #consultants span:nth-of-type(9),
+#NRC-Banner:hover #consultants span:nth-of-type(10),
+#NRC-Banner.hover #consultants span:nth-of-type(10),
+#NRC-Banner:hover #consultants span:nth-of-type(11),
+#NRC-Banner.hover #consultants span:nth-of-type(11){ 
     opacity: 1; 
-    -webkit-transition-duration: .24s; 
-    -moz-transition-duration: .24s; 
-    -o-transition-duration: .24s; 
-    transition-duration: .24s; 
-} 
-#NRC-Banner:hover #natural span:nth-of-type(5){ 
-    opacity: 1; 
-    -webkit-transition-duration: .32s; 
-    -moz-transition-duration: .32s; 
-    -o-transition-duration: .32s; 
-    transition-duration: .32s; 
-} 
-#NRC-Banner:hover #natural span:nth-of-type(6){ 
-    opacity: 1; 
+}
+/*natural timing*/
+#natural span:nth-of-type(2),
+#NRC-Banner:hover #natural span:nth-of-type(7),
+#NRC-Banner.hover #natural span:nth-of-type(7) { 
+    -webkit-transition-duration: .48s; 
+    -moz-transition-duration: .48s; 
+    -o-transition-duration: .48s; 
+    transition-duration: .48s;
+}
+#natural span:nth-of-type(3),
+#NRC-Banner:hover #natural span:nth-of-type(6),
+#NRC-Banner.hover #natural span:nth-of-type(6) {
     -webkit-transition-duration: .40s; 
     -moz-transition-duration: .40s; 
     -o-transition-duration: .40s; 
     transition-duration: .40s; 
-} 
-#NRC-Banner:hover #natural span:nth-of-type(7){ 
-    opacity: 1; 
-    -webkit-transition-duration: .48s; 
-    -moz-transition-duration: .48s; 
-    -o-transition-duration: .48s; 
-    transition-duration: .48s; 
-} 
-
-/*resources hide*/
-#resources span:nth-of-type(2) { 
-    opacity: 0; 
+}
+#natural span:nth-of-type(4),
+#NRC-Banner:hover #natural span:nth-of-type(5),
+#NRC-Banner.hover #natural span:nth-of-type(5) {
+    -webkit-transition-duration: .32s; 
+    -moz-transition-duration: .32s; 
+    -o-transition-duration: .32s; 
+    transition-duration: .32s; 
+}
+#natural span:nth-of-type(5),
+#NRC-Banner:hover #natural span:nth-of-type(4),
+#NRC-Banner.hover #natural span:nth-of-type(4) {
+    -webkit-transition-duration: .24s; 
+    -moz-transition-duration: .24s; 
+    -o-transition-duration: .24s; 
+    transition-duration: .24s; 
+}
+#natural span:nth-of-type(6),
+#NRC-Banner:hover #natural span:nth-of-type(3),
+#NRC-Banner.hover #natural span:nth-of-type(3) {
+    -webkit-transition-duration: .16s; 
+    -moz-transition-duration: .16s; 
+    -o-transition-duration: .16s; 
+    transition-duration: .16s; 
+}
+#natural span:nth-of-type(7),
+#NRC-Banner:hover #natural span:nth-of-type(2),
+#NRC-Banner.hover #natural span:nth-of-type(2) {
+    -webkit-transition-duration: .08s; 
+    -moz-transition-duration: .08s; 
+    -o-transition-duration: .08s; 
+    transition-duration: .08s; 
+}
+/*resources timing*/
+#resources span:nth-of-type(2),
+#NRC-Banner:hover #resources span:nth-of-type(9),
+#NRC-Banner.hover #resources span:nth-of-type(9){
     -webkit-transition-duration: .48s; 
     -moz-transition-duration: .48s; 
     -o-transition-duration: .48s; 
     transition-duration: .48s;
 }
-#resources span:nth-of-type(3) { 
-    opacity: 0; 
+#resources span:nth-of-type(3),
+#NRC-Banner:hover #resources span:nth-of-type(8),
+#NRC-Banner.hover #resources span:nth-of-type(8){
     -webkit-transition-duration: .42s; 
     -moz-transition-duration: .42s; 
     -o-transition-duration: .42s; 
     transition-duration: .42s;
 }
-#resources span:nth-of-type(4) { 
-    opacity: 0; 
+#resources span:nth-of-type(4),
+#NRC-Banner:hover #resources span:nth-of-type(7),
+#NRC-Banner.hover #resources span:nth-of-type(7){
     -webkit-transition-duration: .36s; 
     -moz-transition-duration: .36s; 
     -o-transition-duration: .36s; 
     transition-duration: .36s;
 }
-#resources span:nth-of-type(5) { 
-    opacity: 0; 
+#resources span:nth-of-type(5),
+#NRC-Banner:hover #resources span:nth-of-type(6),
+#NRC-Banner.hover #resources span:nth-of-type(6){
     -webkit-transition-duration: .30s; 
     -moz-transition-duration: .30s; 
     -o-transition-duration: .30s; 
     transition-duration: .30s;
 }
-#resources span:nth-of-type(6) { 
-    opacity: 0; 
+#resources span:nth-of-type(6),
+#NRC-Banner:hover #resources span:nth-of-type(5),
+#NRC-Banner.hover #resources span:nth-of-type(5){
     -webkit-transition-duration: .24s; 
     -moz-transition-duration: .24s; 
     -o-transition-duration: .24s; 
     transition-duration: .24s;
 }
-#resources span:nth-of-type(7) { 
-    opacity: 0; 
+#resources span:nth-of-type(7),
+#NRC-Banner:hover #resources span:nth-of-type(4),
+#NRC-Banner.hover #resources span:nth-of-type(4){
     -webkit-transition-duration: .18s; 
     -moz-transition-duration: .18s; 
     -o-transition-duration: .18s; 
     transition-duration: .18s;
 }
-#resources span:nth-of-type(8) { 
-    opacity: 0; 
+#resources span:nth-of-type(8),
+#NRC-Banner:hover #resources span:nth-of-type(3),
+#NRC-Banner.hover #resources span:nth-of-type(3){
     -webkit-transition-duration: .12s; 
     -moz-transition-duration: .12s; 
     -o-transition-duration: .12s; 
     transition-duration: .12s;
 }
-#resources span:nth-of-type(9) { 
-    opacity: 0; 
+#resources span:nth-of-type(9),
+#NRC-Banner:hover #resources span:nth-of-type(2),
+#NRC-Banner.hover #resources span:nth-of-type(2){
     -webkit-transition-duration: .06s; 
     -moz-transition-duration: .06s; 
     -o-transition-duration: .06s; 
     transition-duration: .06s;
 }
-
-/*resources show*/
-#NRC-Banner:hover #resources span:nth-of-type(2){ 
-    opacity: 1; 
-    -webkit-transition-duration: .06s; 
-    -moz-transition-duration: .06s; 
-    -o-transition-duration: .06s; 
-    transition-duration: .06s;
-}
-#NRC-Banner:hover #resources span:nth-of-type(3){ 
-    opacity: 1; 
-    -webkit-transition-duration: .12s; 
-    -moz-transition-duration: .12s; 
-    -o-transition-duration: .12s; 
-    transition-duration: .12s;
-}
-#NRC-Banner:hover #resources span:nth-of-type(4){ 
-    opacity: 1; 
-    -webkit-transition-duration: .18s; 
-    -moz-transition-duration: .18s; 
-    -o-transition-duration: .18s; 
-    transition-duration: .18s;
-}
-#NRC-Banner:hover #resources span:nth-of-type(5){ 
-    opacity: 1; 
-    -webkit-transition-duration: .24s; 
-    -moz-transition-duration: .24s; 
-    -o-transition-duration: .24s; 
-    transition-duration: .24s;
-}
-#NRC-Banner:hover #resources span:nth-of-type(6){ 
-    opacity: 1; 
-    -webkit-transition-duration: .30s; 
-    -moz-transition-duration: .30s; 
-    -o-transition-duration: .30s; 
-    transition-duration: .30s;
-}
-#NRC-Banner:hover #resources span:nth-of-type(7){ 
-    opacity: 1; 
-    -webkit-transition-duration: .36s; 
-    -moz-transition-duration: .36s; 
-    -o-transition-duration: .36s; 
-    transition-duration: .36s;
-}
-#NRC-Banner:hover #resources span:nth-of-type(8){ 
-    opacity: 1; 
-    -webkit-transition-duration: .42s; 
-    -moz-transition-duration: .42s; 
-    -o-transition-duration: .42s; 
-    transition-duration: .42s;
-}
-#NRC-Banner:hover #resources span:nth-of-type(9){ 
-    opacity: 1; 
+/*consultands timing*/
+#consultants span:nth-of-type(2),
+#NRC-Banner:hover #consultants span:nth-of-type(11),
+#NRC-Banner.hover #consultants span:nth-of-type(11) {
     -webkit-transition-duration: .48s; 
     -moz-transition-duration: .48s; 
     -o-transition-duration: .48s; 
     transition-duration: .48s;
 }
-
-/*consultants hide*/
-#consultants span:nth-of-type(2) { 
-    opacity: 0; 
-    -webkit-transition-duration: .48s; 
-    -moz-transition-duration: .48s; 
-    -o-transition-duration: .48s; 
-    transition-duration: .48s;
-}
-#consultants span:nth-of-type(3) { 
-    opacity: 0; 
+#consultants span:nth-of-type(3),
+#NRC-Banner:hover #consultants span:nth-of-type(10),
+#NRC-Banner.hover #consultants span:nth-of-type(10) {
     -webkit-transition-duration: .432s; 
     -moz-transition-duration: .432s; 
     -o-transition-duration: .432s; 
     transition-duration: .432s;
 }
-#consultants span:nth-of-type(4) { 
-    opacity: 0; 
+#consultants span:nth-of-type(4),
+#NRC-Banner:hover #consultants span:nth-of-type(9),
+#NRC-Banner.hover #consultants span:nth-of-type(9) {
     -webkit-transition-duration: .384s; 
     -moz-transition-duration: .384s; 
     -o-transition-duration: .384s; 
     transition-duration: .384s;
 }
-#consultants span:nth-of-type(5) { 
-    opacity: 0; 
+#consultants span:nth-of-type(5),
+#NRC-Banner:hover #consultants span:nth-of-type(8),
+#NRC-Banner.hover #consultants span:nth-of-type(8) {
     -webkit-transition-duration: .336s; 
     -moz-transition-duration: .336s; 
     -o-transition-duration: .336s; 
     transition-duration: .336s;
 }
-#consultants span:nth-of-type(6) { 
-    opacity: 0; 
+#consultants span:nth-of-type(6),
+#NRC-Banner:hover #consultants span:nth-of-type(7),
+#NRC-Banner.hover #consultants span:nth-of-type(7) {
     -webkit-transition-duration: .288s; 
     -moz-transition-duration: .288s; 
     -o-transition-duration: .288s; 
     transition-duration: .288s;
 }
-#consultants span:nth-of-type(7) { 
-    opacity: 0; 
+#consultants span:nth-of-type(7),
+#NRC-Banner:hover #consultants span:nth-of-type(6),
+#NRC-Banner.hover #consultants span:nth-of-type(6) {
     -webkit-transition-duration: .24s; 
     -moz-transition-duration: .24s; 
     -o-transition-duration: .24s; 
     transition-duration: .24s;
 }
-#consultants span:nth-of-type(8) { 
-    opacity: 0; 
+#consultants span:nth-of-type(8),
+#NRC-Banner:hover #consultants span:nth-of-type(5),
+#NRC-Banner.hover #consultants span:nth-of-type(5) {
     -webkit-transition-duration: .192s; 
     -moz-transition-duration: .192s; 
     -o-transition-duration: .192s; 
     transition-duration: .192s;
 }
-#consultants span:nth-of-type(9) { 
-    opacity: 0; 
+#consultants span:nth-of-type(9),
+#NRC-Banner:hover #consultants span:nth-of-type(4),
+#NRC-Banner.hover #consultants span:nth-of-type(4) {
     -webkit-transition-duration: .144s; 
     -moz-transition-duration: .144s; 
     -o-transition-duration: .144s; 
     transition-duration: .144s;
 }
-#consultants span:nth-of-type(10) { 
-    opacity: 0; 
+#consultants span:nth-of-type(10),
+#NRC-Banner:hover #consultants span:nth-of-type(3),
+#NRC-Banner.hover #consultants span:nth-of-type(3) {
     -webkit-transition-duration: .096s; 
     -moz-transition-duration: .096s; 
     -o-transition-duration: .096s; 
     transition-duration: .096s;
 }
-#consultants span:nth-of-type(11) { 
-    opacity: 0; 
+#consultants span:nth-of-type(11),
+#NRC-Banner:hover #consultants span:nth-of-type(2),
+#NRC-Banner.hover #consultants span:nth-of-type(2) {
     -webkit-transition-duration: .048s; 
     -moz-transition-duration: .048s; 
     -o-transition-duration: .048s; 
     transition-duration: .048s;
-}
-
-/*consultants show*/
-#NRC-Banner:hover #consultants span:nth-of-type(2){ 
-    opacity: 1; 
-    -webkit-transition-duration: .048s; 
-    -moz-transition-duration: .048s; 
-    -o-transition-duration: .048s; 
-    transition-duration: .048s;
-}
-#NRC-Banner:hover #consultants span:nth-of-type(3){ 
-    opacity: 1; 
-    -webkit-transition-duration: .096s; 
-    -moz-transition-duration: .096s; 
-    -o-transition-duration: .096s; 
-    transition-duration: .096s;
-}
-#NRC-Banner:hover #consultants span:nth-of-type(4){ 
-    opacity: 1; 
-    -webkit-transition-duration: .144s; 
-    -moz-transition-duration: .144s; 
-    -o-transition-duration: .144s; 
-    transition-duration: .144s;
-}
-#NRC-Banner:hover #consultants span:nth-of-type(5){ 
-    opacity: 1; 
-    -webkit-transition-duration: .192s; 
-    -moz-transition-duration: .192s; 
-    -o-transition-duration: .192s; 
-    transition-duration: .192s;
-}
-#NRC-Banner:hover #consultants span:nth-of-type(6){ 
-    opacity: 1; 
-    -webkit-transition-duration: .24s; 
-    -moz-transition-duration: .24s; 
-    -o-transition-duration: .24s; 
-    transition-duration: .24s;
-}
-#NRC-Banner:hover #consultants span:nth-of-type(7){ 
-    opacity: 1; 
-    -webkit-transition-duration: .288s; 
-    -moz-transition-duration: .288s; 
-    -o-transition-duration: .288s; 
-    transition-duration: .288s;
-}
-#NRC-Banner:hover #consultants span:nth-of-type(8){ 
-    opacity: 1; 
-    -webkit-transition-duration: .336s; 
-    -moz-transition-duration: .336s; 
-    -o-transition-duration: .336s; 
-    transition-duration: .336s;
-}
-#NRC-Banner:hover #consultants span:nth-of-type(9){ 
-    opacity: 1; 
-    -webkit-transition-duration: .384s; 
-    -moz-transition-duration: .384s; 
-    -o-transition-duration: .384s; 
-    transition-duration: .384s;
-}
-#NRC-Banner:hover #consultants span:nth-of-type(10){ 
-    opacity: 1; 
-    -webkit-transition-duration: .432s; 
-    -moz-transition-duration: .432s; 
-    -o-transition-duration: .432s; 
-    transition-duration: .432s;
-}
-#NRC-Banner:hover #consultants span:nth-of-type(11){ 
-    opacity: 1; 
-    -webkit-transition-duration: .48s; 
-    -moz-transition-duration: .48s; 
-    -o-transition-duration: .48s; 
-    transition-duration: .48s;
 }
