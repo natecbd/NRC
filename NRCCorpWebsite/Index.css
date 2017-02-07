@@ -32,13 +32,13 @@ body {
 }
 
 #triangle1 {
-    border-left: 20px solid white;    
+    border-left: 20px solid white;
 }
 #triangle2 {
-    border-left: 20px solid #d8e7ff;    
+    border-left: 20px solid #d8e7ff;
 }
 #triangle3 {
-    border-left: 20px solid #c1d9ff;    
+    border-left: 20px solid #c1d9ff;
 }
 
 .swiper {
@@ -70,8 +70,8 @@ body {
 }
 
 .service-blurb {
-    font-family: 'Garamond';    
-    font-size: 16px;
+    font-family: 'Garamond';
+    font-size: 24px;
 }
 
 #BG {
@@ -143,6 +143,10 @@ body {
 
 #consultants {
     margin-left: -165px;
+}
+
+#witness {
+    visibility: hidden;
 }
 
 #logo, #resources, #consultants,
